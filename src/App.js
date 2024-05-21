@@ -71,7 +71,7 @@ function App() {
   const fetchData=async(searchQuery)=>{
     const response=await fetch(`https://omdbapi.com/?s=${searchQuery}&apikey=${API_KEY}`);
     const data=await response.json();
-    console.log(data.Search)
+    // console.log(data.Search)
     setMovieList(data.Search)
   }
 
